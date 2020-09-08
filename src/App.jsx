@@ -47,7 +47,7 @@ class App extends Component {
                     rounded
                   />
                 </div>
-                <div class="col-sm-8" style ={ }>
+                <div class="col-sm-8">
                   <p id="myself">
                     Hello I am Ayush Chowdhury. I am a self-taught programmer
                     wanting to learn more everyday. My enthusiasm in Coding
