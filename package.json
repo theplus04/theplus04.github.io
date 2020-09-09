@@ -1,17 +1,21 @@
 {
-  "name": "react",
+  "name": "react-project",
   "version": "0.0.0",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.20",
+    "@fortawesome/free-brands-svg-icons": "^5.14.0",
     "@fortawesome/free-regular-svg-icons": "^5.14.0",
+    "@fortawesome/free-solid-svg-icons": "^5.14.0",
     "@fortawesome/react-fontawesome": "^0.1.11",
     "bootstrap": "4.5.2",
     "jquery": "3.5.1",
     "popper.js": "1.16.1",
-    "react": "16.13.1",
+    "react": "^16.13.1",
     "react-bootstrap": "1.3.0",
-    "react-dom": "16.13.1",
+    "react-dom": "^16.13.1",
+    "react-particles-js": "^3.3.0",
+    "react-reveal": "^1.2.2",
     "sc-react": "0.1.7"
   },
   "scripts": {
@@ -21,6 +25,18 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "react-scripts": "latest"
+    "react-scripts": "^3.4.3"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

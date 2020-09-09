@@ -7,7 +7,19 @@ html {
 .intro {
   background: white;
 }
-#hero {
+
+#tsparticles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+
+#home {
     font-size: 3.5rem;
     font-weight: 700;
     margin-bottom: 3.2rem;
@@ -17,18 +29,12 @@ html {
     display: flex;
     align-items: center;
     border-bottom: 0;
-    background: #fff;
-    color: #272341;
+    color: #fff;
     padding: 0 5.6rem;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: -1;
 }
 
 @media (max-width: 37.5em) {
-  #hero {
+  #home {
     font-size: 2.5rem;
     line-height: 1.5;
     text-align: center;
@@ -44,23 +50,26 @@ html {
 
 #btn {
   background: linear-gradient(130deg, #a7087f, #560088);
-  border: none;
+  position:absolute;
+  color: #fff;
+  z-index: 9999;
 }
 
 #btn:hover {
   background: linear-gradient(130deg, #560088, #a7087f);
 }
 .container {
-  margin: 0;
+  margin: 0 auto;
   align-items: center;
   padding: 70px;
   text-align: center;
 }
 
 @media (min-width: 37.5em) {
-  button {
+  #btn {
     width: 400px;
-    height: 50px
+    height: 50px;
+    text-align: center;
   }
 }
 
@@ -92,7 +101,8 @@ img {
     flex-direction: column;
     font-weight: 400;
     font-family: 'Kufam', cursive;
-    font-size: 15px
+    font-size: 15px;
+    text-align: left;
 }
 @media (max-width: 37.5em) {
   #whois {
@@ -109,9 +119,68 @@ img {
     height: 150px;
     
   }
+  #btn {
+    position: relative;
+  }
   #myself {
     height: 100%;
     font-weight: 200;
-    
+  }
+  .footer hr {
+    width: 100%;
+  }
 }
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  transition: 0.5s;
+}
+
+.social-links:hover {
+  color: gray;
+}
+
+.footer hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  width: 80%;
+  background: gray;  
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+  display: block;
+  unicode-bidi: isolate;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  overflow: hidden;
+  border-style: inset;
+  border-width: 1px;
+  box-sizing: content-box;
+  height: 0;
+}
+
+.footer-text {
+  color: grey;
+  font-size: 1.3rem;
+}
+
+#up {
+  transition: 0.5s;
+}
+
+#up:hover {
+  color: gray;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  transition: 0.5s;
+  word-spacing: 20px;
 }
