@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+.blog {
+    margin: 0%;
+    padding: 50px;
+    font-family: 'Slabo 27px', serif;
+}
+
+.blog h1 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 64px;
+    padding-bottom: 100px;
+}
+
+.blog h2, .blog h3, .blog h4, .blog h5, .blog h6 {
+    font-size: 1.875rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    padding-bottom: .25rem;
+    border-bottom-width: 1px;
+    margin-top: -4rem;
+    padding-top: 6rem;
+}
+
+.blog a {
+    text-decoration: none;
+}
+
+.blogs {
+    margin: 0%;
+    padding: 50px;
+    font-family: 'Slabo 27px', serif;
+}
+
+.blog td, .blog th {
+    border: 1px solid black;
+    padding: 8px;
+  }
+  
+  .blog tr:nth-child(even){background-color: #f2f2f2;}
+  
+  .blog tr:hover {background-color: #ddd;}
+  
+  .blog th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #272341;
+    color: white;
+  }
