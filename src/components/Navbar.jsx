@@ -5,7 +5,7 @@ class TopNav extends Component {
   render() {
     return (
       <>
-        <Navbar variant="dark" expand="lg" fixed={this.props.fixed ? '' : 'top' } style={{ background: this.props.colour ? this.props.colour : '#272341' }}>
+        <Navbar variant="dark" expand="lg" fixed={this.props.fixed ? '' : 'top' } style={{ background: this.props.colour ? this.props.colour : '#282a36' }}>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">

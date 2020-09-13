@@ -12,7 +12,7 @@ class Footer extends Component {
     render() {
         return (
             <>
-                <div className="jumbotron footer" style={{ background: this.props.colour ? this.props.colour : '#272341', margin: '0px', width: '100%', borderRadius: '0', color: 'white', textAlign: 'center', display: 'flex', justifyContent: 'center', flexDirection: 'column' }}>
+                <div className="jumbotron footer" style={{ background: this.props.colour ? this.props.colour : '#282a36', margin: '0px', width: '100%', borderRadius: '0', color: 'white', textAlign: 'center', display: 'flex', justifyContent: 'center', flexDirection: 'column' }}>
                     <div className="social-links" style={{ fontSize: '35px', textAlign: 'center' }}>
                         <a style={{ textDecoration: 'none', color: 'white' }} href="https://discord.com/invite/sY57ftY"><FontAwesomeIcon icon={faDiscord} id="ic" />&nbsp;</a>
                         <a style={{ textDecoration: 'none', color: 'white' }} href="https://github.com/theplus04"><FontAwesomeIcon icon={faGithub} id="ic" />&nbsp;</a>

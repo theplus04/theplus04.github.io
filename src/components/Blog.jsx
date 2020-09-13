@@ -3,7 +3,6 @@ import Markdown from 'react-markdown';
 import './Blogs.css';
 import "prism-themes/themes/prism-dracula.css";
 import Prism from 'prismjs';
-import { Card, Button, CardGroup, CardDeck } from 'react-bootstrap';
 
 import NavBar from './Navbar';
 import Footer from './Footer';
@@ -12,31 +11,29 @@ const blogs = require('../blogs/blogs');
 
 export const CatalogView = () => {
   return (
-    <>
+    <div style={{ background: 'linear-gradient(to right, #00c6ff, #0072ff)'}}>
       <NavBar />
-      <div className="blog">
-        <h1>Blogs Written By Me</h1>
-        <CardDeck>
-          <CardGroup>
-            {blogs.map((m) => {
-              return (
-                <Card style={{ width: '18rem' }}>
-                  <Card.Img variant="top" src={m.image} />
-                  <Card.Body>
-                    <Card.Title><h2>{m.title}</h2></Card.Title>
-                    <Card.Text>
-                      <p>{m.description}</p>
-                    </Card.Text>
-                    <Button variant="primary" onClick={() => window.location.assign(`/blog/${m.path}`)}>Read More</Button>
-                  </Card.Body>
-                </Card>
-              );
-            })}
-          </CardGroup>
-        </CardDeck>
+      <div className="main">
+        <h1>My Blogs</h1>
+        <ul className="cards">
+          {blogs.map(m => {
+            return (
+              <li className="cards_item">
+                <div className="card">
+                  <div className="card_image"><img src={m.image} /></div>
+                  <div className="card_content">
+                    <h2 className="card_title">{m.title}</h2>
+                    <p className="card_text">{m.description}</p>
+                    <button className="btn card_btn" onClick={() => window.location.assign(`/blog/${m.path}`)}>Read More</button>
+                  </div>
+                </div>
+              </li>
+            );
+          })}
+        </ul>
       </div>
       <Footer />
-    </>
+    </div>
   )
 }
 
