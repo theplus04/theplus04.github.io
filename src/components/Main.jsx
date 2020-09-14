@@ -45,11 +45,11 @@ class App extends Component {
         <section id="home" style={{ background: '#272341', marginBottom: '0px' }}>
           <div className="intro" style={{ background: '#272341' }}>
             <p>
-              <Fade top cascade>
-                Hello, I am <span style={{ color: "#a7087f" }}>Ayush CH</span>
+              <Fade top>
+                Hello, I am <span style={{ color: "#a7087f" }}>Ayush</span>
               </Fade>
             </p>
-            <h1><Fade bottom cascade>I am a sportsman and a programmer</Fade></h1>
+            <h1><Fade bottom>I am a sportsman and a programmer</Fade></h1>
             <p>
               <Flip bottom cascade>
                 <Button id="btn"
@@ -88,7 +88,7 @@ class App extends Component {
                 </div>
                 <div class="col-md-6 col-sm-12" style={{ textAlign: 'left' }}>
                   <p id="myself">
-                    <Roll top cascade>
+                    <Roll top>
                       Hello I am Ayush Chowdhury. I am a self-taught programmer
                       wanting to learn more everyday. My enthusiasm in Coding
                       begun when I was 10 years old. The 1st language I learnt was
@@ -96,7 +96,7 @@ class App extends Component {
                     </Roll>
                     <br />
                     <br />
-                    <h2> <Roll bottom cascade> # Be a developer to aspire another developer </Roll> </h2>
+                    <h2 style={{ textAlign: 'center' }}> <Roll bottom> # Be a developer to aspire another developer </Roll> </h2>
                   </p>
                 </div>
               </div>

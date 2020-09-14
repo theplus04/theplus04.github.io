@@ -6,12 +6,13 @@ import Prism from 'prismjs';
 
 import NavBar from './Navbar';
 import Footer from './Footer';
+import Loader from './Loader';
 
 const blogs = require('../blogs/blogs');
 
 export const CatalogView = () => {
   return (
-    <div style={{ background: 'linear-gradient(to right, #00c6ff, #0072ff)'}}>
+    <div style={{ background: 'linear-gradient(to right, #00c6ff, #0072ff)' }}>
       <NavBar />
       <div className="main">
         <h1>My Blogs</h1>
@@ -42,7 +43,8 @@ export class ProductView extends Component {
   constructor() {
     super();
     this.state = {
-      markdown: null
+      markdown: null,
+      isLoaded: false
     }
   }
 
@@ -55,15 +57,18 @@ export class ProductView extends Component {
           return response.text();
         }).then(text => {
           this.setState({
-            markdown: text
+            markdown: text,
+            isLoaded: true
           });
         });
     } catch (e) {
       this.setState({
         markdown: `
-# Blog Not Found
-# [Return To Blogs Page](/blogs)     
-` })
+          # Blog Not Found
+          # [Return To Blogs Page](/blogs)     
+        `,
+        isLoaded: true
+      })
     }
   }
 
@@ -72,14 +77,19 @@ export class ProductView extends Component {
   }
 
   render() {
-    return (
-      <>
-        <NavBar />
-        <div className="blog">
-          <Markdown source={this.state.markdown} />
-        </div>
-        <Footer />
-      </>
-    )
+    const { markdown, isLoaded } = this.state;
+    if (!isLoaded) {
+      return <Loader />;
+    } else {
+      return (
+        <>
+          <NavBar />
+          <div className="blog">
+            <Markdown source={markdown} />
+          </div>
+          <Footer />
+        </>
+      )
+    }
   }
 }
