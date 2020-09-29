@@ -16,7 +16,7 @@ class Footer extends Component {
                     <div className="social-links" style={{ fontSize: '35px', textAlign: 'center' }}>
                         <a style={{ textDecoration: 'none', color: 'white' }} href="https://discord.com/invite/sY57ftY"><FontAwesomeIcon icon={faDiscord} id="ic" />&nbsp;</a>
                         <a style={{ textDecoration: 'none', color: 'white' }} href="https://github.com/theplus04"><FontAwesomeIcon icon={faGithub} id="ic" />&nbsp;</a>
-                        <a style={{ textDecoration: 'none', color: 'white' }} href="https://www.instagram.com/ayush_ch04"><FontAwesomeIcon icon={faInstagram} id="ic" />&nbsp;</a>
+                        <a style={{ textDecoration: 'none', color: 'white' }} href="https://www.instagram.com/ayushkr.me"><FontAwesomeIcon icon={faInstagram} id="ic" />&nbsp;</a>
                         <a style={{ textDecoration: 'none', color: 'white' }} href="https://www.facebook.com/ayushkr004"><FontAwesomeIcon icon={faFacebook} id="ic" /></a>
                     </div>
                     <hr />

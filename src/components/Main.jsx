@@ -12,7 +12,6 @@ import Particles from 'react-particles-js';
 import Fade from 'react-reveal/Fade';
 import Flip from 'react-reveal/Flip';
 import Bounce from 'react-reveal/Bounce';
-import Roll from 'react-reveal/Roll';
 
 import NavBar from './Navbar';
 import Skills from './Skills';
@@ -73,9 +72,9 @@ class App extends Component {
             noMargin
           >
             <h1 align="center" id="whois">
-              <Bounce left cascade>
+              <Fade top>
                 About Me
-              </Bounce>
+              </Fade>
             </h1>
             <div className="container" style={{ textAlign: "center" }}>
               <div class="row">
@@ -88,15 +87,15 @@ class App extends Component {
                 </div>
                 <div class="col-md-6 col-sm-12" style={{ textAlign: 'left' }}>
                   <p id="myself">
-                    <Roll top>
+                    <Fade right>
                       Hello I am Ayush Chowdhury. I am a self-taught programmer
                       wanting to learn more everyday. My enthusiasm in Coding
                       begun when I was 10 years old. The 1st language I learnt was
                       BASIC.
-                    </Roll>
+                    </Fade>
                     <br />
                     <br />
-                    <h2 style={{ textAlign: 'center' }}> <Roll bottom> # Be a developer to aspire another developer </Roll> </h2>
+                    <h2> <Fade bottom> #Be a developer to aspire another developer </Fade> </h2>
                   </p>
                 </div>
               </div>
