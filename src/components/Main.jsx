@@ -10,8 +10,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import Particles from 'react-particles-js';
 
-import { Link } from 'react-router-dom';
-
 import Fade from 'react-reveal/Fade';
 import Flip from 'react-reveal/Flip';
 import Bounce from 'react-reveal/Bounce';
@@ -26,24 +24,56 @@ class App extends Component {
 				<NavBar colour='#272341' fixed='false' />
 				<Particles
 					params={{
-						particles: {
-							number: {
-								value: 50
+						"particles": {
+							"number": {
+								"value": 160,
+								"density": {
+									"enable": false
+								}
 							},
-							size: {
-								value: 3
+							"size": {
+								"value": 3,
+								"random": true,
+								"anim": {
+									"speed": 4,
+									"size_min": 0.3
+								}
+							},
+							"line_linked": {
+								"enable": false
+							},
+							"move": {
+								"random": true,
+								"speed": 1,
+								"direction": "top",
+								"out_mode": "out"
 							}
 						},
-						interactivity: {
-							events: {
-								onhover: {
-									enable: true,
-									mode: 'repulse'
+						"interactivity": {
+							"events": {
+								"onhover": {
+									"enable": true,
+									"mode": "bubble"
+								},
+								"onclick": {
+									"enable": true,
+									"mode": "repulse"
+								}
+							},
+							"modes": {
+								"bubble": {
+									"distance": 250,
+									"duration": 2,
+									"size": 0,
+									"opacity": 0
+								},
+								"repulse": {
+									"distance": 400,
+									"duration": 4
 								}
 							}
 						}
-					}}
-				/>
+					}} />
 				<section id='home' style={{ background: '#272341', marginBottom: '0px' }}>
 					<div className='intro' style={{ background: '#272341' }}>
 						<p>
@@ -58,7 +88,7 @@ class App extends Component {
 							<Flip bottom cascade>
 								<a href="#ayush" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
 									<Button id='btn' style={{ border: 0 }}>EXPLORE MORE</Button>
-								</a> 
+								</a>
 								<a href="/blog" style={{ textDecoration: 'none' }} rel="noopener noreferrer">
 									<Button id='btn' style={{ border: 0 }}>Read My Blogs</Button>
 								</a>
