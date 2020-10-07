@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Navbar, Nav, Form, Button } from 'react-bootstrap';
+import { Navbar, Nav } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 class TopNav extends Component {
 	render() {
@@ -19,11 +20,9 @@ class TopNav extends Component {
 							<Nav.Link href='/#skills'>Skills</Nav.Link>
 							<Nav.Link href='/#contact'>Contact</Nav.Link>
 						</Nav>
-						<Form inline>
-							<Button variant='outline-info' onClick={() => window.location.assign('/blog')}>
-								Blogs
-							</Button>
-						</Form>
+						<Nav>
+							<Nav.Link as={Link} to='/blog'>Blogs</Nav.Link>
+						</Nav>
 					</Navbar.Collapse>
 				</Navbar>
 			</>

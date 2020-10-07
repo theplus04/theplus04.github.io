@@ -9,6 +9,8 @@ import Loader from './Loader';
 import 'prism-themes/themes/prism-dracula.css';
 import '../styles/Blogs.css';
 
+import { stripIndents } from 'common-tags';
+
 const blogs = require('../blogs/blogs');
 
 export const CatalogView = () => {
@@ -71,10 +73,10 @@ export class ProductView extends Component {
 				});
 		} catch (e) {
 			this.setState({
-				markdown: `
-          # Blog Not Found
-          # [Return To Blogs Page](/blogs)     
-        `,
+				markdown: stripIndents`
+					# Blog Not Found
+					# [Return To Blogs Page](/blog)     
+        		`,
 				isLoaded: true
 			});
 		}

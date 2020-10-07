@@ -49,13 +49,18 @@ html {
 	h1 {
 		font-size: 1rem;
 	}
+	.intro {
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+	}
 }
 
 #btn {
 	background: linear-gradient(130deg, #a7087f, #560088);
-	position: absolute;
 	color: #fff;
-	z-index: 9999;
+	margin: 0.5rem;
+  	color: #ffffff;
 }
 
 #btn:hover {

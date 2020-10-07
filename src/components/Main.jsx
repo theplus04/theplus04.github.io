@@ -10,6 +10,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import Particles from 'react-particles-js';
 
+import { Link } from 'react-router-dom';
+
 import Fade from 'react-reveal/Fade';
 import Flip from 'react-reveal/Flip';
 import Bounce from 'react-reveal/Bounce';
@@ -54,9 +56,12 @@ class App extends Component {
 						</h1>
 						<p>
 							<Flip bottom cascade>
-								<Button id='btn' style={{ border: 0 }} onClick={() => window.location.assign('#ayush')}>
-									Explore More
-								</Button>
+								<a href="#ayush" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+									<Button id='btn' style={{ border: 0 }}>EXPLORE MORE</Button>
+								</a> 
+								<a href="/blog" style={{ textDecoration: 'none' }} rel="noopener noreferrer">
+									<Button id='btn' style={{ border: 0 }}>Read My Blogs</Button>
+								</a>
 							</Flip>
 						</p>
 					</div>
@@ -85,7 +90,7 @@ class App extends Component {
 								</div>
 								<div class='col-md-6 col-sm-12' style={{ textAlign: 'left' }}>
 									<p id='myself'>
-										<Fade right>
+										<Fade>
 											Hello I am Ayush Chowdhury. I am a self-taught programmer wanting to learn
 											more everyday. My enthusiasm in Coding begun when I was 10 years old. The
 											1st language I learnt was BASIC.
@@ -94,7 +99,7 @@ class App extends Component {
 										<br />
 										<h2>
 											{' '}
-											<Fade bottom> #Be a developer to aspire another developer </Fade>{' '}
+											<Fade> #Be a developer to aspire another developer </Fade>{' '}
 										</h2>
 									</p>
 								</div>
