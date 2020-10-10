@@ -89,8 +89,8 @@ class App extends Component {
 								<a href="#ayush" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
 									<Button id='btn' style={{ border: 0 }}>EXPLORE MORE</Button>
 								</a>
-								<a href="/blog" style={{ textDecoration: 'none' }} rel="noopener noreferrer">
-									<Button id='btn' style={{ border: 0 }}>Read My Blogs</Button>
+								<a href="https://blog.ayushkr.me/" target="_blank" style={{ textDecoration: 'none' }} rel="noopener noreferrer">
+									<Button id='btn' style={{ border: 0 }}>MY BLOG PAGE</Button>
 								</a>
 							</Flip>
 						</p>

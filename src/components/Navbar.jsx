@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 
 class TopNav extends Component {
 	render() {
@@ -21,7 +20,7 @@ class TopNav extends Component {
 							<Nav.Link href='/#contact'>Contact</Nav.Link>
 						</Nav>
 						<Nav>
-							<Nav.Link as={Link} to='/blog'>Blogs</Nav.Link>
+							<Nav.Link href='https://blog.ayushkr.me/' target="_blank" >Blogs</Nav.Link>
 						</Nav>
 					</Navbar.Collapse>
 				</Navbar>
