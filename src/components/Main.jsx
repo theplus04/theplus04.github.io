@@ -151,7 +151,7 @@ class App extends Component {
 						</div>
 					</SkewedContainer>
 				</section>
-				<div className='container-fluid' style={{ background: 'wheat', paddingBottom: 100 }}>
+				<div className='container-fluid' id="projects" style={{ background: 'wheat', paddingBottom: 100 }}>
 					<br />
 					<h1 align='center' id='whois'>
 						<Bounce left cascade>
