@@ -133,7 +133,6 @@ class App extends Component {
 										👤 Profession - Student
 				
 										![Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=itsayushch&theme=calm&layout=compact)
-
 										`} />
 									</p>
 								</div>
