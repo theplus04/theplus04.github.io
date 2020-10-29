@@ -110,7 +110,6 @@ html {
 }
 #myself {
 	display: flex;
-	height: 100%;
 	justify-content: center;
 	flex-direction: column;
 	font-weight: 400;
@@ -128,15 +127,10 @@ html {
 		padding-right: 1rem;
 		margin: 0%;
 	}
-	#logo {
-		width: 150px;
-		height: 150px;
-	}
 	#btn {
 		position: relative;
 	}
 	#myself {
-		height: 100%;
 		font-weight: 200;
 	}
 	.footer hr {
@@ -196,4 +190,14 @@ html {
 	flex-direction: row;
 	transition: 0.5s;
 	word-spacing: 20px;
+}
+
+.btn {
+	width: 100%;
+	margin: 2px;
+}
+
+.card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
 }

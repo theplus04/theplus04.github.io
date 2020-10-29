@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 
 import NavBar from './Navbar';
 import Skills from './Skills';
+import Projects from './Projects'
 import Footer from './Footer';
 
 import SkewedContainer from 'sc-react';
 import { Button, Image } from 'react-bootstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import Particles from 'react-particles-js';
+import Markdown from 'react-markdown';
 
 import Fade from 'react-reveal/Fade';
 import Flip from 'react-reveal/Flip';
@@ -16,6 +16,8 @@ import Bounce from 'react-reveal/Bounce';
 
 import '../styles/App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+import { stripIndents } from 'common-tags';
 
 class App extends Component {
 	render() {
@@ -76,14 +78,14 @@ class App extends Component {
 					}} />
 				<section id='home' style={{ background: '#272341', marginBottom: '0px' }}>
 					<div className='intro' style={{ background: '#272341' }}>
-						<p>
-							<Fade top>
+						<Fade top>
+							<p>
 								Hello, I am <span style={{ color: '#a7087f' }}>Ayush</span>
-							</Fade>
-						</p>
-						<h1>
-							<Fade bottom>I am a sportsman and a programmer</Fade>
-						</h1>
+							</p>
+						</Fade>
+						<h3>
+							<Fade bottom># Be a developer to aspire another developer</Fade>
+						</h3>
 						<p>
 							<Flip bottom cascade>
 								<a href="#ayush" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
@@ -109,44 +111,55 @@ class App extends Component {
 						<h1 align='center' id='whois'>
 							<Fade top>About Me</Fade>
 						</h1>
-						<div className='container' style={{ textAlign: 'center' }}>
-							<div class='row'>
-								<div class='col-md-6 col-sm-12'>
+						<div className='container-fluid' style={{ textAlign: 'center', padding: 40 }}>
+							<div className='row'>
+								<div className='col-sm'>
 									<Image
 										id='logo'
-										src='https://cdn.discordapp.com/attachments/739002420704706571/752844170208477285/Absolute_Fashion.png'
+										src='https://cdn.discordapp.com/avatars/539770184236269568/9c0ac9c7eeccb54cc651c28c4f3fbaca.png?size=1024'
 										rounded
-									/>
-								</div>
-								<div class='col-md-6 col-sm-12' style={{ textAlign: 'left' }}>
+									/> <br /> <br /> <br />
 									<p id='myself'>
 										<Fade>
-											Hello I am Ayush Chowdhury. I am a self-taught programmer wanting to learn
-											more everyday. My enthusiasm in Coding begun when I was 10 years old. The
-											1st language I learnt was BASIC.
+											<p>
+												Hello, I am Ayush Chowdhury. 
+												I am a self-taught programmer, web developer, sportsman, comedian and a mimicry artist upto some extent.😅
+												If you are wanting to chat with me, hire me or work together please feel free to <a href="#contact" style={{ textDecoration: 'none', color: 'RoyalBlue', fontWeight: 'bolder' }}>contact me</a> 😉
+											</p>
 										</Fade>
-										<br />
-										<br />
-										<h2>
-											{' '}
-											<Fade> #Be a developer to aspire another developer </Fade>{' '}
-										</h2>
+										<Markdown source={stripIndents`
+										🌐 Location - Darjeeling, WB, India.\n
+										🎂 DOB - 30th Oct, 2006\n
+										👤 Profession - Student
+				
+										![Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=itsayushch&theme=calm&layout=compact)
+
+										`} />
 									</p>
+								</div>
+								<div className='col-sm' style={{ textAlign: 'left' }}>
+									<Bounce left cascade>
+										<h1 align='center' id='whois'>
+											<Bounce left cascade>
+												SKILLS
+											</Bounce>
+										</h1>
+									</Bounce>
+									<Skills />
 								</div>
 							</div>
 						</div>
 					</SkewedContainer>
 				</section>
-				<div className='jumbotron' style={{ padding: '90px', background: '#fff' }} id='skills'>
+				<div className='container-fluid' style={{ background: 'wheat', paddingBottom: 100 }}>
 					<br />
 					<h1 align='center' id='whois'>
 						<Bounce left cascade>
-							SKILLS
+							PROJECTS
 						</Bounce>
+						<br />
 					</h1>
-					<p align='center' style={{ fontSize: '20px' }}>
-						<Skills />
-					</p>
+					<Projects />
 				</div>
 				<SkewedContainer
 					top='left'
@@ -158,20 +171,17 @@ class App extends Component {
 				>
 					<div className='container' style={{ paddingTop: '0', textAlign: 'center' }} id='contact'>
 						<h1 align='center' id='whois'>
-							<Fade big cascade>
+							<span role="img" aria-label="mail">📧</span><Fade big cascade>
 								CONTACT ME
-							</Fade>
+						</Fade>
 						</h1>
 						<br />
 						<Fade bottom cascade>
-							<p> Wanting to Contact Me? Click on the button below! </p>
-							<br />
-							<Button
-								variant='outline-light'
-								onClick={() => window.location.assign('mailto:ayush.chowdhury2004@gmail.com')}
-							>
-								<FontAwesomeIcon icon={faEnvelope} /> Contact Me
-							</Button>
+							<Markdown source={stripIndents`
+							[![Discord](https://img.shields.io/badge/Discord-Ayush%233192-B1A7F0?style=for-the-badge&logo=discord&link=https://discord.gg/sY57ftY)](https://discord.gg/sY57ftY) &nbsp; [![Mail](https://img.shields.io/badge/Mail-ayush.chowdhury2004%40gmail.com-B1A7F0?style=for-the-badge&logo=gmail&link=mailto:ayush.chowdhury2004@gmail.com)](mailto:ayush.chowdhury2004@gmail.com)
+
+							[![Insta](https://img.shields.io/badge/Instagram-ayushkr.me-B1A7F0?style=for-the-badge&logo=instagram&link=https://www.instagram.com/ayushkr.me)](https://www.instagram.com/ayushkr.me) &nbsp; [![Facebook](https://img.shields.io/badge/Facebook-Ayush%20Chowdhury-B1A7F0?style=for-the-badge&logo=facebook&link=https://www.facebook.com/ayushkr004)](https://www.facebook.com/ayushkr004)
+							`} />
 						</Fade>
 					</div>
 				</SkewedContainer>
