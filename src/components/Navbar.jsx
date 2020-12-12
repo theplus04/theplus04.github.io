@@ -2,14 +2,38 @@ import React, { Component } from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 
 class TopNav extends Component {
+	constructor() {
+		super();
+		this.state = { scrollY: 0 };
+	}
+
+	onScroll = () => {
+		this.setState({ scrollY: window.scrollY });
+	}
+
+	componentDidMount() {
+		window.addEventListener('scroll', this.onScroll);
+	}
+
+	componentWillUnmount() {
+		window.removeEventListener('scroll', this.onScroll);
+	}
 	render() {
+		let { background, variant } = { background: '#272341', variant: 'dark' };
+		if (this.state.scrollY > 0) {
+			background = 'white';
+			variant = 'light';
+		} else {
+			background = '#272341';
+			variant = 'dark';
+		}
 		return (
 			<>
 				<Navbar
-					variant='dark'
+					variant={variant}
 					expand='lg'
-					fixed={this.props.fixed ? '' : 'top'}
-					style={{ background: this.props.colour ? this.props.colour : '#282a36' }}
+					fixed='top'
+					style={{ background }}
 				>
 					<Navbar.Toggle aria-controls='basic-navbar-nav' />
 					<Navbar.Collapse id='basic-navbar-nav'>

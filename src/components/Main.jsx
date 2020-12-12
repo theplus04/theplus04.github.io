@@ -18,12 +18,13 @@ import '../styles/App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { stripIndents } from 'common-tags';
+import pfp from '../constants/pfp.jpg';
 
 class App extends Component {
 	render() {
 		return (
 			<div>
-				<NavBar colour='#272341' fixed='false' />
+				<NavBar />
 				<Particles
 					params={{
 						"particles": {
@@ -116,13 +117,13 @@ class App extends Component {
 								<div className='col-sm'>
 									<Image
 										id='logo'
-										src='https://cdn.discordapp.com/avatars/539770184236269568/9c0ac9c7eeccb54cc651c28c4f3fbaca.png?size=1024'
+										src={pfp}
 										rounded
 									/> <br /> <br /> <br />
 									<p id='myself'>
 										<Fade>
 											<p>
-												Hello, I am Ayush Chowdhury. 
+												Hello, I am Ayush Chowdhury.
 												I am a self-taught programmer, web developer, sportsman, comedian and a mimicry artist upto some extent.😅
 												If you are wanting to chat with me, hire me or work together please feel free to <a href="#contact" style={{ textDecoration: 'none', color: 'RoyalBlue', fontWeight: 'bolder' }}>contact me</a> 😉
 											</p>
@@ -150,7 +151,7 @@ class App extends Component {
 						</div>
 					</SkewedContainer>
 				</section>
-				<div className='container-fluid' id="projects" style={{ background: 'wheat', paddingBottom: 100 }}>
+				<div className='container-fluid' id="projects" style={{ background: 'pink', paddingBottom: 100 }}>
 					<br />
 					<h1 align='center' id='whois'>
 						<Bounce left cascade>
@@ -176,11 +177,12 @@ class App extends Component {
 						</h1>
 						<br />
 						<Fade bottom cascade>
-							<Markdown source={stripIndents`
-							[![Discord](https://img.shields.io/badge/Discord-Ayush%233192-B1A7F0?style=for-the-badge&logo=discord&link=https://discord.gg/sY57ftY)](https://discord.gg/sY57ftY) &nbsp; [![Mail](https://img.shields.io/badge/Mail-ayush.chowdhury2004%40gmail.com-B1A7F0?style=for-the-badge&logo=gmail&link=mailto:ayush.chowdhury2004@gmail.com)](mailto:ayush.chowdhury2004@gmail.com)
-
-							[![Insta](https://img.shields.io/badge/Instagram-ayushkr.me-B1A7F0?style=for-the-badge&logo=instagram&link=https://www.instagram.com/ayushkr.me)](https://www.instagram.com/ayushkr.me) &nbsp; [![Facebook](https://img.shields.io/badge/Facebook-Ayush%20Chowdhury-B1A7F0?style=for-the-badge&logo=facebook&link=https://www.facebook.com/ayushkr004)](https://www.facebook.com/ayushkr004)
-							`} />
+							<Button style={{ width: '50%' }} variant="outline-light"
+								onClick={() => window.open('mailto:ayush.chowdhury2004@gmail.com', '_blank')}
+							>
+								<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="mail-bulk" class="svg-inline--fa fa-mail-bulk fa-w-18 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M160 448c-25.6 0-51.2-22.4-64-32-64-44.8-83.2-60.8-96-70.4V480c0 17.67 14.33 32 32 32h256c17.67 0 32-14.33 32-32V345.6c-12.8 9.6-32 25.6-96 70.4-12.8 9.6-38.4 32-64 32zm128-192H32c-17.67 0-32 14.33-32 32v16c25.6 19.2 22.4 19.2 115.2 86.4 9.6 6.4 28.8 25.6 44.8 25.6s35.2-19.2 44.8-22.4c92.8-67.2 89.6-67.2 115.2-86.4V288c0-17.67-14.33-32-32-32zm256-96H224c-17.67 0-32 14.33-32 32v32h96c33.21 0 60.59 25.42 63.71 57.82l.29-.22V416h192c17.67 0 32-14.33 32-32V192c0-17.67-14.33-32-32-32zm-32 128h-64v-64h64v64zm-352-96c0-35.29 28.71-64 64-64h224V32c0-17.67-14.33-32-32-32H96C78.33 0 64 14.33 64 32v192h96v-32z"></path></svg>
+								{' '}Email
+							</Button>
 						</Fade>
 					</div>
 				</SkewedContainer>

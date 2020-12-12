@@ -19,15 +19,15 @@ class Skills extends Component {
 					Node.js
 				</Fade>
 				<div class='progress' style={{ height: '50px' }}>
-					<div class='progress-bar bg-success' style={{ width: '70%' }}></div>
+					<div class='progress-bar bg-success' style={{ width: '73%' }}></div>
 				</div>
 				<br></br>
 
 				<Fade left cascade>
-					Vanilla JS
+					Typescript
 				</Fade>
 				<div class='progress' style={{ height: '50px' }}>
-					<div class='progress-bar bg-info' style={{ width: '60%' }}></div>
+					<div class='progress-bar' style={{ width: '70%', background: '#003bff' }}></div>
 				</div>
 				<br></br>
 
@@ -35,7 +35,16 @@ class Skills extends Component {
 					React
 				</Fade>
 				<div class='progress' style={{ height: '50px' }}>
-					<div class='progress-bar bg-warning' style={{ width: '55%' }}></div>
+					<div class='progress-bar bg-warning' style={{ width: '65%' }}></div>
+				</div>
+				<br></br>
+
+
+				<Fade left cascade>
+					Vanilla JS
+				</Fade>
+				<div class='progress' style={{ height: '50px' }}>
+					<div class='progress-bar bg-info' style={{ width: '60%' }}></div>
 				</div>
 				<br></br>
 

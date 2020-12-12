@@ -24,5 +24,17 @@ module.exports = [
         name: 'Personal Blog',
         live: 'https://blog.ayushkr.me/',
         info: 'My personal blog which is built with docusaurus.'
+    },
+    {
+        icon: 'https://cdn.discordapp.com/avatars/761469922563063818/b0d2a2c6c2715736c9e344774b5bbc5e.png?size=2048',
+        name: 'Mito Discord Bot',
+        live: 'https://top.gg/bot/761469922563063818',
+        info: 'Meet Mito the hamster, who can do everything you imagine ranging from moderation to fun commands.'
+    },
+    {
+        name: 'Clash Bot',
+        info: 'A bot written in javascript to help beginners wanting to build a clash of clans discord bot.',
+        source: 'https://github.com/itsayushch/clashbot',
+        icon: 'https://cdn.freelogovectors.net/wp-content/uploads/2019/01/clash_of_clans_logo.png'
     }
 ]

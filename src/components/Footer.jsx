@@ -3,7 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart } from '@fortawesome/free-regular-svg-icons';
 import { faCode } from '@fortawesome/free-solid-svg-icons';
 import { faDiscord, faGithub, faInstagram, faFacebook } from '@fortawesome/free-brands-svg-icons';
-import Zoom from 'react-reveal/Zoom';
+import Jump from 'react-reveal/Jump';
+import RubberBand from 'react-reveal/RubberBand';
 
 import '../styles/App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -26,36 +27,48 @@ class Footer extends Component {
 						flexDirection: 'column'
 					}}
 				>
-					<div className='social-links' style={{ fontSize: '35px', textAlign: 'center' }}>
-						<a style={{ textDecoration: 'none', color: 'white' }} href='https://discord.com/invite/sY57ftY'>
-							<FontAwesomeIcon icon={faDiscord} id='ic' />
+					<Jump>
+						<div className='social-links' style={{ fontSize: '35px', textAlign: 'center' }}>
+							<a
+								style={{ textDecoration: 'none', color: 'white' }}
+								href='https://discord.com/invite/sY57ftY'
+								target='_blank'
+							>
+								<FontAwesomeIcon icon={faDiscord} id='ic' />
 							&nbsp;
 						</a>
-						<a style={{ textDecoration: 'none', color: 'white' }} href='https://github.com/theplus04'>
-							<FontAwesomeIcon icon={faGithub} id='ic' />
+							<a
+								style={{ textDecoration: 'none', color: 'white' }}
+								href='https://github.com/itsayushch'
+								target='_blank'
+							>
+								<FontAwesomeIcon icon={faGithub} id='ic' />
 							&nbsp;
 						</a>
-						<a
-							style={{ textDecoration: 'none', color: 'white' }}
-							href='https://www.instagram.com/ayushkr.me'
-						>
-							<FontAwesomeIcon icon={faInstagram} id='ic' />
+							<a
+								style={{ textDecoration: 'none', color: 'white' }}
+								href='https://www.instagram.com/ayushkr.me'
+								target='_blank'
+							>
+								<FontAwesomeIcon icon={faInstagram} id='ic' />
 							&nbsp;
 						</a>
-						<a
-							style={{ textDecoration: 'none', color: 'white' }}
-							href='https://www.facebook.com/ayushkr004'
-						>
-							<FontAwesomeIcon icon={faFacebook} id='ic' />
-						</a>
-					</div>
+							<a
+								style={{ textDecoration: 'none', color: 'white' }}
+								href='https://www.facebook.com/ayushkr004'
+								target='_blank'
+							>
+								<FontAwesomeIcon icon={faFacebook} id='ic' />
+							</a>
+						</div>
+					</Jump>
 					<hr />
 
-					<Zoom left>
+					<RubberBand>
 						<span className='footer-text'>
 							<FontAwesomeIcon icon={faCode} /> with <FontAwesomeIcon icon={faHeart} /> by Ayush CH
 						</span>
-					</Zoom>
+					</RubberBand>
 				</div>
 			</>
 		);
