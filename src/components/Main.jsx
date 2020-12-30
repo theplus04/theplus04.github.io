@@ -124,7 +124,7 @@ class App extends Component {
 										<Fade>
 											<p>
 												Hello, I am Ayush Chowdhury.
-												I am a self-taught programmer, web developer, sportsman, comedian and a mimicry artist upto some extent.😅
+												I am a self-taught programmer, web developer, sportsman, comedian and a mimicry artist upto some extent.
 												If you are wanting to chat with me, hire me or work together please feel free to <a href="#contact" style={{ textDecoration: 'none', color: 'RoyalBlue', fontWeight: 'bolder' }}>contact me</a> 😉
 											</p>
 										</Fade>
@@ -151,9 +151,9 @@ class App extends Component {
 						</div>
 					</SkewedContainer>
 				</section>
-				<div className='container-fluid' id="projects" style={{ background: 'pink', paddingBottom: 100 }}>
+				<div className='container-fluid' id="projects" style={{ background: '#272341', paddingBottom: 100 }}>
 					<br />
-					<h1 align='center' id='whois'>
+					<h1 align='center' id='whois' style={{ color: 'wheat' }}>
 						<Bounce left cascade>
 							PROJECTS
 						</Bounce>

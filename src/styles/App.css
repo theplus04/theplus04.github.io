@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Kufam:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
 html {
 	scroll-behavior: smooth;
@@ -207,4 +208,11 @@ html {
 
 #ic:hover {
 	color: aquamarine;
+}
+
+.card-title {
+	font-family: 'Kufam', cursive;
+}
+.card-text {
+	font-family: 'Varela Round', sans-serif;
 }

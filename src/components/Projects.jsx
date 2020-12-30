@@ -9,20 +9,28 @@ class Card extends React.Component {
 				{projects.map((m, i) => {
 					return (
 						<>
-							{i % 2 == 0 ?
+							{i % 2 === 0 ?
 								(<Fade left>
 									<div>
-										<div class="shadow-lg p-3 mb-5 bg-white rounded">
+										<div class="shadow-lg p-3 mb-5" style={{ borderRadius: 10, background: '#393266', color: 'wheat' }}>
 											<div class="row no-gutters">
 												<div class="col-md-4">
-													<img src={m.icon} class="card-img" alt="..." />
+													<center>
+														<img src={m.icon} style={{ borderRadius: '50%', width: '80%' }} class="card-img img-fluid" alt="..." />
+													</center>
 												</div>
 												<div class="col-md-8">
-													<div class="card-body" style={{ paddingTop: '10%' }}>
+													<div class="card-body" style={{
+														textAlign: 'center',
+														justifyContent: 'center',
+														display: 'flex',
+														flexDirection: 'column'
+													}}>
 														<h1 class="card-title">{m.name}</h1>
 														<p class="card-text">{m.info}</p>
-														{m.source ? (<> <a href={m.source} target="_blank" class="btn btn-outline-primary">Source Code</a> <br /></>) : ''}
-														{m.live ? (<> <a href={m.live} target="_blank" class="btn btn-outline-primary">See Live</a> <br /></>) : ''}
+														<p /><p />
+														{m.source ? (<> <a href={m.source} target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary">Source Code</a> <p /></>) : ''}
+														{m.live ? (<> <a href={m.live} target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary">See Live</a> <p /></>) : ''}
 													</div>
 												</div>
 											</div>
@@ -34,20 +42,25 @@ class Card extends React.Component {
 								(
 									<Fade right>
 										<div>
-											<div class="shadow-lg p-3 mb-5 bg-white rounded">
+											<div class="shadow-lg p-3 mb-5" style={{ borderRadius: 10, background: '#393266', color: 'wheat' }}>
 												<div class="row no-gutters">
 													<div class="col-md-4">
-														<img src={m.icon} class="card-img" alt="..." style={{
-															width: '90%',
-															height: '100%'
-														}} />
+														<center>
+															<img src={m.icon} style={{ borderRadius: '50%', width: '80%' }} class="card-img img-fluid" alt="..." />
+														</center>
 													</div>
 													<div class="col-md-8">
-														<div class="card-body" style={{ paddingTop: '10%' }}>
+														<div class="card-body" style={{
+															textAlign: 'center',
+															justifyContent: 'center',
+															display: 'flex',
+															flexDirection: 'column'
+														}}>
 															<h1 class="card-title">{m.name}</h1>
 															<p class="card-text">{m.info}</p>
-															{m.source ? (<> <a href={m.source} target="_blank" class="btn btn-outline-primary">Source Code</a> <br /></>) : ''}
-															{m.live ? (<> <a href={m.live} target="_blank" class="btn btn-outline-primary">See Live</a> <br /></>) : ''}
+															<p /><p />
+															{m.source ? (<> <a href={m.source} target="_blank" rel="noopener noreferrer" class="btn btn-outline-info">Source Code</a> <p /></>) : ''}
+															{m.live ? (<> <a href={m.live} target="_blank" rel="noopener noreferrer" class="btn btn-outline-info">See Live</a> <p /></>) : ''}
 														</div>
 													</div>
 												</div>

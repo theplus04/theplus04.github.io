@@ -33,6 +33,7 @@ class Footer extends Component {
 								style={{ textDecoration: 'none', color: 'white' }}
 								href='https://discord.com/invite/sY57ftY'
 								target='_blank'
+								rel='noopener noreferrer'
 							>
 								<FontAwesomeIcon icon={faDiscord} id='ic' />
 							&nbsp;
@@ -41,6 +42,7 @@ class Footer extends Component {
 								style={{ textDecoration: 'none', color: 'white' }}
 								href='https://github.com/itsayushch'
 								target='_blank'
+								rel='noopener noreferrer'
 							>
 								<FontAwesomeIcon icon={faGithub} id='ic' />
 							&nbsp;
@@ -49,6 +51,7 @@ class Footer extends Component {
 								style={{ textDecoration: 'none', color: 'white' }}
 								href='https://www.instagram.com/ayushkr.me'
 								target='_blank'
+								rel='noopener noreferrer'
 							>
 								<FontAwesomeIcon icon={faInstagram} id='ic' />
 							&nbsp;
@@ -57,6 +60,7 @@ class Footer extends Component {
 								style={{ textDecoration: 'none', color: 'white' }}
 								href='https://www.facebook.com/ayushkr004'
 								target='_blank'
+								rel='noopener noreferrer'
 							>
 								<FontAwesomeIcon icon={faFacebook} id='ic' />
 							</a>

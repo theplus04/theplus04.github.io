@@ -7,12 +7,18 @@ module.exports = [
         live: 'https://ayushkr.me/'
     },
     {
-        icon: 'https://cdn.discordapp.com/attachments/754998947990339594/764105268929101834/quiz.png',
-        name: 'Quiz App',
+        icon: 'https://quiz.ayushkr.me/static/media/quizora.7eab4ac3.svg',
+        name: 'Quizora',
         source: 'https://github.com/itsayushch/quiz.ayushkr.me',
         info: 'A quiz app made by me that generates 10 random questions with multiple options.',
         live: 'https://quiz.ayushkr.me/'
-    }, 
+    },
+    {
+        name: 'Alph4 Bot',
+        info: 'The bot is designed to make your life easier on discord whether your a server owner or just a normal member, both parties benefit from the bot! The dev team have been working very hard for several months to make the bot exactly how we\'d like it and we are still developing it to this day making it the best we possible can.',
+        live: 'https://alph4.gitbook.io/',
+        icon: 'https://media.discordapp.net/attachments/723855790112505886/792675800645894154/9c4e09471f47b54423a77b9141dd5215.png?width=300&height=300'
+    },
     {
         icon: 'https://cdn.discordapp.com/attachments/754998947990339594/764105806181826560/musico.png',
         name: 'Musico Discord Bot',
