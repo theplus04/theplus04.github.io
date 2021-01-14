@@ -36,8 +36,8 @@ class Footer extends Component {
 								rel='noopener noreferrer'
 							>
 								<FontAwesomeIcon icon={faDiscord} id='ic' />
-							&nbsp;
-						</a>
+								&nbsp;
+							</a>
 							<a
 								style={{ textDecoration: 'none', color: 'white' }}
 								href='https://github.com/itsayushch'
@@ -45,17 +45,8 @@ class Footer extends Component {
 								rel='noopener noreferrer'
 							>
 								<FontAwesomeIcon icon={faGithub} id='ic' />
-							&nbsp;
-						</a>
-							<a
-								style={{ textDecoration: 'none', color: 'white' }}
-								href='https://www.instagram.com/ayushkr.me'
-								target='_blank'
-								rel='noopener noreferrer'
-							>
-								<FontAwesomeIcon icon={faInstagram} id='ic' />
-							&nbsp;
-						</a>
+								&nbsp;
+							</a>
 							<a
 								style={{ textDecoration: 'none', color: 'white' }}
 								href='https://www.facebook.com/ayushkr004'
