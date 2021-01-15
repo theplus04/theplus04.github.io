@@ -3,6 +3,18 @@
     {
       "source": "/discord",
       "destination": "https://discord.gg/sY57ftY"
+    },
+    {
+      "source": "/facebook",
+      "destination": "https://www.facebook.com/ayushkr004"      
+    },
+    {
+      "source": "/github",
+      "destination": "https://github.com/itsayushch"
+    },
+    {
+      "source": "/instagram",
+      "destination": "https://www.instagram.com/itsayushch/"
     }
   ]
 }

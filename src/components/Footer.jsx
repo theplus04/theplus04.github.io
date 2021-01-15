@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart } from '@fortawesome/free-regular-svg-icons';
 import { faCode } from '@fortawesome/free-solid-svg-icons';
-import { faDiscord, faGithub, faFacebook } from '@fortawesome/free-brands-svg-icons';
+import { faDiscord, faGithub, faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import Jump from 'react-reveal/Jump';
 import RubberBand from 'react-reveal/RubberBand';
 
@@ -31,7 +31,7 @@ class Footer extends Component {
 						<div className='social-links' style={{ fontSize: '35px', textAlign: 'center' }}>
 							<a
 								style={{ textDecoration: 'none', color: 'white' }}
-								href='https://discord.com/invite/sY57ftY'
+								href='/discord'
 								target='_blank'
 								rel='noopener noreferrer'
 							>
@@ -40,7 +40,7 @@ class Footer extends Component {
 							</a>
 							<a
 								style={{ textDecoration: 'none', color: 'white' }}
-								href='https://github.com/itsayushch'
+								href='/github'
 								target='_blank'
 								rel='noopener noreferrer'
 							>
@@ -49,11 +49,20 @@ class Footer extends Component {
 							</a>
 							<a
 								style={{ textDecoration: 'none', color: 'white' }}
-								href='https://www.facebook.com/ayushkr004'
+								href='/facebook'
 								target='_blank'
 								rel='noopener noreferrer'
 							>
 								<FontAwesomeIcon icon={faFacebook} id='ic' />
+								&nbsp;
+							</a>
+							<a
+								style={{ textDecoration: 'none', color: 'white' }}
+								href='/instagram'
+								target='_blank'
+								rel='noopener noreferrer'
+							>
+								<FontAwesomeIcon icon={faInstagram} id='ic' />
 							</a>
 						</div>
 					</Jump>

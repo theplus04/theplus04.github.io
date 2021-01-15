@@ -207,7 +207,7 @@ html {
 }
 
 #ic:hover {
-	color: aquamarine;
+	opacity: 0.5;
 }
 
 .card-title {
